@@ -1,7 +1,7 @@
-# Totem module: loadCSS
+# Totemcss module: loadCSS
 Twig partial for outputting your stylesheets in the loadCSS pattern to load your css asynchronous.
 
-This module is created for [Totem](https://www.github.com/toolbarthomas/totem) projects but can also be used in any other Twig related project.
+This module is created for [Totemcss](https://www.github.com/toolbarthomas/totemcss) projects but can also be used in any other Twig related project.
 
 ## Installation
 
@@ -60,7 +60,7 @@ You can include the loadCSS Javascript files from another location by defining t
 
 Using the *base* parameter is optional since we asum you can use the totem_submodules:: namespace.
 The loadCSS javascript file will also be synced to your **dist**
-When using this module within the Totem project structure.
+When using this module within the Totemcss project structure.
 
 ```twig
 <head>
