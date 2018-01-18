@@ -1,6 +1,6 @@
 {
   "name": "totemcss-module-loadcss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Totemcss module with fg-loadcss snippets for twig",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

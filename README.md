@@ -58,7 +58,7 @@ You can extend the ouput by setting the **include_onload_fallback** parameter to
 loadcss.twig will include the loadCSS Javascript Functions from itself.
 You can include the loadCSS Javascript files from another location by defining the **base** parameter.
 
-Using the *base* parameter is optional since we asum you can use the totem_submodules:: namespace.
+Using the *base* parameter is optional since we asum you can use the totemcss_packages:: namespace.
 The loadCSS javascript file will also be synced to your **dist**
 When using this module within the Totemcss project structure.
 
