@@ -1,0 +1,27 @@
+{
+  "name": "totemcss-module-loadcss",
+  "version": "0.1.0",
+  "description": "Totemcss module with fg-loadcss snippets for twig",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toolbarthomas/totemcss-module-loadcss.git"
+  },
+  "keywords": [
+    "totemcss",
+    "tipi",
+    "totemcss-module",
+    "loadcss"
+  ],
+  "author": "Thomas van der Velde <contact@toolbarthomas.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toolbarthomas/totemcss-module-loadcss/issues"
+  },
+  "homepage": "https://github.com/toolbarthomas/totemcss-module-loadcss#readme",
+  "dependencies": {
+    "fg-loadcss": "^1.3.1"
+  }
+}

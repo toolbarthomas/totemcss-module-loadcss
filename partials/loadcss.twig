@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Generates snippet for loading non-critical stylesheets asynchronously
+*/
+#}
+
+{% if stylesheets is not empty %}
+    {% for stylesheet in stylesheets %}
+        <link rel="preload" href="{{ stylesheet|raw }}" as="style" onload="this.rel='stylesheet'">
+    {% endfor %}
+
+    <noscript>
+        {% for stylesheet in stylesheets %}
+            <link rel="stylesheet" href="{{ stylesheet|raw }}">
+        {% endfor %}
+    </noscript>
+    <script>
+        {# Define a base directory to include the loadCss Javascript files #}
+        {% set directory = (base|default('totem_submodules::')) %}
+
+        {% spaceless %}
+            {% include directory ~ '/totemcss-module-loadcss/javascripts/lib/fg-loadcss/loadCSS.min.js' ignore missing %}
+            {% include directory ~ '/totemcss-module-loadcss/javascripts/lib/fg-loadcss/cssrelpreload.min.js' ignore missing %}
+            {% if include_onload_fallback is same as(true) %}
+                {% include directory ~ '/totemcss-module-loadcss/javascripts/lib/fg-loadcss/onloadCSS.min.js' ignore missing %}
+            {% endif %}
+        {% endspaceless %}
+    </script>
+
+{% endif %}
